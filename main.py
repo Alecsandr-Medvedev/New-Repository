@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 class Window(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
+        self.setupUi(self)
         self.btn.clicked.connect(self.paint)
         self.paint = False
 
